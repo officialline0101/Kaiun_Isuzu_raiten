@@ -965,7 +965,7 @@
                         ||
                         (slotStart.getDay() === 4 && // 木曜日
                             ((slotStart.getHours() > 15 || (slotStart.getHours() === 15 && slotStart.getMinutes() >= 30)) &&
-                                (slotStart.getHours() < 17 || (slotStart.getHours() === 17 && slotStart.getMinutes() <= 30)))) // 15:00～16:59
+                                (slotStart.getHours() < 17 || (slotStart.getHours() === 17 && slotStart.getMinutes() <= 29)))) // 15:00～16:59
                     ) {
                         cell.textContent = '✕';
                         cell.classList.add('unavailable', 'black-x');
